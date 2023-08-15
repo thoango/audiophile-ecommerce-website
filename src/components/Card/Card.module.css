@@ -1,0 +1,12 @@
+.card {
+    color: var(--white-color);
+}
+
+.title {
+    margin: 16px auto 24px;
+}
+
+.discription {
+    opacity: .75;
+    margin: 0 auto 28px;
+}

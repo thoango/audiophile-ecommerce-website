@@ -1,0 +1,13 @@
+.button {
+    width: 160px;
+    height: 48px;
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: var(--font-size-button);
+    letter-spacing: 1px;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    background-color: var(--orange-color-dark);
+}

@@ -1,0 +1,17 @@
+.kanban {
+    background: #000000 url(../../assets/home/mobile/image-header.jpg) center / 375px no-repeat;
+    height: 600px;
+
+    position: relative;
+}
+
+.kanban-wrapper {
+    width: calc(100% - 48px);
+    max-width: 328px;
+
+    position: absolute;
+    padding: 0 24px;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+}
