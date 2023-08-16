@@ -11,3 +11,23 @@
 
     background-color: var(--orange-color-dark);
 }
+
+.button.text {
+    width: unset;
+    height: unset;
+    line-height: 18px;
+    color: rgba(0, 0, 0, .5);
+    background-color: transparent;
+    display: inline-block;
+}
+
+.button.text span {
+    width: 7px;
+    height: 7px;
+    border: 2px solid var(--orange-color-dark);
+    transform: rotate(45deg);
+    display: inline-block;
+    border-left: none;
+    border-bottom: none;
+    margin-left: 8px;
+}

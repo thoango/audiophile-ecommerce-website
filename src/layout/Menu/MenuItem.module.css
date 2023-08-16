@@ -1,0 +1,56 @@
+.item {
+    margin-bottom: 70px;
+
+    position: relative;
+}
+
+.itemWrap {
+    width: 100%;
+    height: 165px;
+    border-radius: 8px;
+    background-color: var(--grey-color-01);
+}
+
+.imageWrap {
+    margin: auto;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.imageWrap::after {
+    content: "";
+    display: inline-block;
+    width: 95px;
+    height: 14px;
+    background-color: var(--black-color-01);
+    filter: blur(21.7463px);
+
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.headphones {
+    width: 80px;
+}
+
+.speakers {
+    width: 84px;
+}
+
+.earphones {
+    width: 102px;
+}
+
+.itemTitle {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    width: 100%;
+}
+
+.button {
+    margin-top: 16px;
+}

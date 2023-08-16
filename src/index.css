@@ -105,9 +105,9 @@ h5 {
 }
 
 h6 {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 1.3px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1.07px;
 }
 
 /* Grouping content
@@ -228,6 +228,8 @@ sup {
 img {
   border-style: none;
   vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Forms
@@ -454,6 +456,11 @@ template {
   display: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* typography classes */
 .overline {
   font-size: 14px;
@@ -475,10 +482,20 @@ template {
   letter-spacing: 1px;
 }
 
+.wrap {
+  padding: 0 24px;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 56px;
     line-height: 58px;
     letter-spacing: 2px;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.3px;
   }
 }
