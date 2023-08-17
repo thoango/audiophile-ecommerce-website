@@ -5,15 +5,8 @@ const Card = (props) => {
   return (
     <article className={`${classes.card} ${classes.background}`}>
       {props.new ? <span className="overline black">NEW PRODUCT</span> : null}
-      <h1 className={classes.title}>
-        XX99 Mark II
-        <br />
-        HeadphoneS
-      </h1>
-      <p className={classes.discription}>
-        Experience natural, lifelike audio and exceptional build quality made
-        for the passionate music enthusiast.
-      </p>
+      <h1 className={classes.title}>{props.productName}</h1>
+      <p className={classes.discription}>{props.discription}</p>
       <Button styleBtn={props.styleBtn}>See Product</Button>
     </article>
   );

@@ -7,6 +7,13 @@ import Button from "../../UI/Button/Button";
 import classes from "./ShowBox.module.css";
 
 const ShowBox = () => {
+  const product = {
+    productName: "ZX9 SPEAKER",
+    discription:
+      "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.",
+    new: false,
+  };
+
   return (
     <div className={classes.showbox}>
       <div className={classes["showbox-item01"]}>
@@ -14,7 +21,12 @@ const ShowBox = () => {
           <img src={speakerSrc} alt="speaker zx9"></img>
         </div>
         <div className={classes["showbox-item01-card"]}>
-          <Card styleBtn="style02"></Card>
+          <Card
+            styleBtn="style02"
+            productName={product.productName}
+            discription={product.discription}
+            new={product.new}
+          ></Card>
         </div>
       </div>
 
