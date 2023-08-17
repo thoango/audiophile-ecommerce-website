@@ -1,0 +1,40 @@
+.footer {
+    background-color: var(--black-color-02);
+    padding: 52px 24px 38px;
+    margin-top: 120px;
+}
+
+.footer-logo {
+    width: 142px;
+    margin: auto;
+    line-height: 1;
+}
+
+.footer-message {
+    color: var(--white-color);
+    opacity: .5;
+}
+
+.footer-bottom {
+    margin-top: 48px;
+}
+
+.footer-copyright {
+    color: var(--white-color);
+    opacity: .5;
+    margin-bottom: 48px;
+}
+
+.footer-bottom-list {
+    list-style: none;
+}
+
+.footer-bottom-item {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.footer-bottom-link {
+    width: 24px;
+    display: inline-block;
+}

@@ -1,0 +1,16 @@
+.navbar {
+    color: var(--white-color);
+    margin: 48px auto;
+}
+
+.navbar-list {
+    list-style: none;
+}
+
+.navbar-item {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 16px;
+}

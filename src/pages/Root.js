@@ -1,5 +1,7 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Header from "../layout/Header/Header";
+import Message from "../layout/Message/Message";
+import Footer from "../layout/Footer/Footer";
 
 const RootLayout = () => {
   const { data } = useLoaderData();
@@ -8,7 +10,9 @@ const RootLayout = () => {
       <Header></Header>
       <main>
         <Outlet></Outlet>
+        <Message></Message>
       </main>
+      <Footer></Footer>
     </>
   );
 };
