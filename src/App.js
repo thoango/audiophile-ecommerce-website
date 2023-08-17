@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout, { loader as rootLoader } from "./pages/Root";
-import HomePage from "./pages/Home";
+import HomePage from "./pages/Home/Home";
 import ErrorPage from "./pages/Error/Error";
 
 import "./App.css";

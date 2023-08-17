@@ -1,27 +1,38 @@
 .button {
     width: 160px;
-    height: 48px;
+    height: 46px;
     display: inline-block;
 
     font-weight: bold;
     font-size: var(--font-size-button);
     letter-spacing: 1px;
-    line-height: 48px;
+    line-height: 46px;
     text-transform: uppercase;
+    text-align: center;
 
-    background-color: var(--orange-color-dark);
+    border: 1px solid var(--black-color-01);
 }
 
-.button.text {
+.button.style01 {
+    background-color: var(--orange-color-dark);
+    border: 1px solid var(--orange-color-dark);
+}
+
+.button.style02 {
+    background-color: var(--black-color-01);
+}
+
+.button.style03 {
     width: unset;
     height: unset;
     line-height: 18px;
     color: rgba(0, 0, 0, .5);
     background-color: transparent;
     display: inline-block;
+    border: none;
 }
 
-.button.text span {
+.button.style03 span {
     width: 7px;
     height: 7px;
     border: 2px solid var(--orange-color-dark);

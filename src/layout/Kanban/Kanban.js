@@ -6,7 +6,7 @@ const Kanban = () => {
   return (
     <div className={classes.kanban}>
       <div className={classes["kanban-wrapper"]}>
-        <Card></Card>
+        <Card styleBtn="style01" new={true}></Card>
       </div>
     </div>
   );

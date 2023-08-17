@@ -10,7 +10,7 @@ const MenuItem = (props) => {
           <img src={props.imageSrc} alt={props.name}></img>
         </div>
         <h6 className={classes.itemTitle}>{props.name}</h6>
-        <Button styleBtn="text" className={classes.button}>
+        <Button styleBtn="style03" className={classes.button}>
           SHOP <span></span>
         </Button>
       </article>
