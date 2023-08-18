@@ -3,7 +3,7 @@
 }
 
 .title {
-    margin: 16px auto 24px;
+    margin: 0 auto 24px;
 }
 
 .discription {
@@ -11,6 +11,13 @@
     margin: 0 auto 28px;
 }
 
-.black {}
+.color {}
 
-.orange {}
+.white .title,
+.white .discription {
+    color: var(--black-color-01);
+}
+
+.white .discription {
+    opacity: .5;
+}

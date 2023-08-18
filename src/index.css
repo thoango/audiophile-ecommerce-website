@@ -473,10 +473,17 @@ p {
   text-transform: uppercase;
   line-height: 19px;
   letter-spacing: 10px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
-.overline.black {
+.overline.color {
   opacity: .5;
+}
+
+.overline.white {
+  opacity: 1;
+  color: var(--orange-color-dark);
 }
 
 .subtitle {

@@ -26,6 +26,7 @@ const ShowBox = () => {
             productName={product.productName}
             discription={product.discription}
             new={product.new}
+            background="color"
           ></Card>
         </div>
       </div>
