@@ -1,4 +1,5 @@
-import { useLoaderData } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
 
 import CategoryList from "./CategoryList";
 import Menu from "../../layout/Menu/Menu";
@@ -6,7 +7,19 @@ import Menu from "../../layout/Menu/Menu";
 import classes from "./Category.module.css";
 
 const CategoryPage = () => {
-  const { products } = useLoaderData();
+  const [products, setProducts] = useState([]);
+  const { data } = useLoaderData();
+  const params = useParams();
+
+  useEffect(() => {
+    const getProducts = (categoryName) => {
+      if (data) {
+        return data.filter((item) => item.category === categoryName);
+      }
+    };
+
+    setProducts(getProducts(params.categoryName));
+  }, [params, data]);
 
   return (
     <div className={classes.category}>
@@ -22,6 +35,5 @@ export async function loader() {
     "https://audiophile-ecommerce-web-847e5-default-rtdb.firebaseio.com/products.json"
   );
   const data = await response.json();
-  const products = data.filter((item) => item.category === "headphones");
-  return { products };
+  return { data };
 }
