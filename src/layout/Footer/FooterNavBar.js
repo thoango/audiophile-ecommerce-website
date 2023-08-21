@@ -10,13 +10,13 @@ const FooterNavBar = () => {
           <NavLink to="">HOME</NavLink>
         </li>
         <li className={classes["navbar-item"]}>
-          <NavLink to="">HEADPHONES</NavLink>
+          <NavLink to="/category/headphones">HEADPHONES</NavLink>
         </li>
         <li className={classes["navbar-item"]}>
-          <NavLink to="">SPEAKERS</NavLink>
+          <NavLink to="/category/speakers">SPEAKERS</NavLink>
         </li>
         <li className={classes["navbar-item"]}>
-          <NavLink to="">EARPHONES</NavLink>
+          <NavLink to="/category/earphones">EARPHONES</NavLink>
         </li>
       </ul>
     </nav>

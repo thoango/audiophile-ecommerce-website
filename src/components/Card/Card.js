@@ -9,7 +9,9 @@ const Card = (props) => {
       ) : null}
       <h1 className={classes.title}>{props.productName}</h1>
       <p className={classes.discription}>{props.discription}</p>
-      <Button styleBtn={props.styleBtn}>See Product</Button>
+      <Button styleBtn={props.styleBtn} destination={props.destination}>
+        See Product
+      </Button>
     </article>
   );
 };

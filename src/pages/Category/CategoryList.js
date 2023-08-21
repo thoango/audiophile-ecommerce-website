@@ -10,6 +10,7 @@ const CategoryList = (props) => {
         .map((item) => (
           <CategoryItem
             key={item.id}
+            id={item.id}
             categoryImage={item.categoryImage.mobile}
             new={item.new}
             name={item.name}
@@ -21,6 +22,7 @@ const CategoryList = (props) => {
         .map((item) => (
           <CategoryItem
             key={item.id}
+            id={item.id}
             categoryImage={item.categoryImage.mobile}
             new={item.new}
             name={item.name}

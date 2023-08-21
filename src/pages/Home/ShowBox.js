@@ -27,6 +27,7 @@ const ShowBox = () => {
             discription={product.discription}
             new={product.new}
             background="color"
+            destination="product/6"
           ></Card>
         </div>
       </div>
@@ -34,7 +35,10 @@ const ShowBox = () => {
       <div className={classes["showbox-item02"]}>
         <article className={classes["showbox-item02-content"]}>
           <h4>ZX7 SPEAKER</h4>
-          <Button className={classes["showbox-item02-button"]}>
+          <Button
+            className={classes["showbox-item02-button"]}
+            destination="product/5"
+          >
             see product
           </Button>
         </article>
@@ -47,7 +51,10 @@ const ShowBox = () => {
         <div className={classes["showbox-item03-wrapper"]}>
           <article className={classes["showbox-item03-content"]}>
             <h4>YX1 EARPHONES</h4>
-            <Button className={classes["showbox-item03-button"]}>
+            <Button
+              className={classes["showbox-item03-button"]}
+              destination="product/1"
+            >
               see product
             </Button>
           </article>

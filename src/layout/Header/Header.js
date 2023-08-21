@@ -12,8 +12,8 @@ const Header = (props) => {
   const [isMenuShowed, setIsMenuShowed] = useState(false);
   const page = props.page;
 
-  const showMenuHandler = () => {
-    setIsMenuShowed(true);
+  const toggleMenuHandler = () => {
+    setIsMenuShowed((prevState) => !prevState);
   };
 
   const closeMenuHandler = () => {
@@ -24,7 +24,7 @@ const Header = (props) => {
     <>
       <header className={classes.header}>
         <div className={classes["header-navbar"]}>
-          <NavBar onShowMenu={showMenuHandler}></NavBar>
+          <NavBar onToggleMenu={toggleMenuHandler}></NavBar>
         </div>
         {!props.page && <Kanban></Kanban>}
         {page === "headphones" ||

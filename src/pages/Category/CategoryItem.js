@@ -14,6 +14,7 @@ const CategoryItem = (props) => {
         discription={props.description}
         new={props.new}
         background="white"
+        destination={`/product/${props.id}`}
       ></Card>
     </li>
   );

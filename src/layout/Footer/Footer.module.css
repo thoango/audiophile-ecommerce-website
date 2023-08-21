@@ -8,6 +8,7 @@
     width: 142px;
     margin: auto;
     line-height: 1;
+    display: inline-block;
 }
 
 .footer-message {

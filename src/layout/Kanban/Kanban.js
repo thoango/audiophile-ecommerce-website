@@ -19,6 +19,7 @@ const Kanban = () => {
           discription={product.discription}
           new={product.new}
           background="color"
+          destination="product/4"
         ></Card>
       </div>
     </div>

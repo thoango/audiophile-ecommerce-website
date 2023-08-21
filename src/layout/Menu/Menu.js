@@ -11,9 +11,21 @@ const Menu = () => {
     <div className={classes.menu}>
       <div className="wrap">
         <ul className={classes.menuList}>
-          <MenuItem imageSrc={headphoneImage} name="headphones"></MenuItem>
-          <MenuItem imageSrc={speakerImage} name="speakers"></MenuItem>
-          <MenuItem imageSrc={earphoneImage} name="earphones"></MenuItem>
+          <MenuItem
+            imageSrc={headphoneImage}
+            name="headphones"
+            destination="/category/headphones"
+          ></MenuItem>
+          <MenuItem
+            imageSrc={speakerImage}
+            name="speakers"
+            destination="/category/speakers"
+          ></MenuItem>
+          <MenuItem
+            imageSrc={earphoneImage}
+            name="earphones"
+            destination="/category/earphones"
+          ></MenuItem>
         </ul>
       </div>
     </div>

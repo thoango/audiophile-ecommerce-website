@@ -11,7 +11,11 @@ const ProductOtherItem = (props) => {
         </div>
         <div>
           <h3 className={classes["item-title"]}>{props.item.name}</h3>
-          <Button styleBtn="style01" className={classes["item-button"]}>
+          <Button
+            styleBtn="style01"
+            className={classes["item-button"]}
+            destination={`/product/${props.item.id}`}
+          >
             see product
           </Button>
         </div>

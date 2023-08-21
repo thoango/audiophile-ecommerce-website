@@ -10,7 +10,7 @@ import classes from "./NavBar.module.css";
 const NavBar = (props) => {
   return (
     <nav className={classes.navbar}>
-      <Navigation onShowMenu={props.onShowMenu}></Navigation>
+      <Navigation onToggleMenu={props.onToggleMenu}></Navigation>
       <Link to="" className={classes["navbar-link"]}>
         <img src={logo} alt="audiophile logo"></img>
       </Link>

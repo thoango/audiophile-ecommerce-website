@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import FooterNavBar from "./FooterNavBar";
 
 import logo from "../../assets/logo.svg";
@@ -11,9 +13,9 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes["footer-wrapper"]}>
-        <div className={classes["footer-logo"]}>
-          <img src={logo} alt="logo"></img>
-        </div>
+        <Link to="" className={classes["footer-logo"]}>
+          <img src={logo} alt="audiophile logo"></img>
+        </Link>
         <FooterNavBar></FooterNavBar>
         <p className={classes["footer-message"]}>
           Audiophile is an all in one stop to fulfill your audio needs. We're a
@@ -27,17 +29,29 @@ const Footer = () => {
           </p>
           <ul className={classes["footer-bottom-list"]}>
             <li className={classes["footer-bottom-item"]}>
-              <a href="#" className={classes["footer-bottom-link"]}>
+              <a
+                href="#"
+                className={classes["footer-bottom-link"]}
+                target="_blank"
+              >
                 <img src={facebookIcon} alt="facebook icon"></img>
               </a>
             </li>
             <li className={classes["footer-bottom-item"]}>
-              <a href="#" className={classes["footer-bottom-link"]}>
+              <a
+                href="#"
+                className={classes["footer-bottom-link"]}
+                target="_blank"
+              >
                 <img src={twitterIcon} alt="twitter icon"></img>
               </a>
             </li>
             <li className={classes["footer-bottom-item"]}>
-              <a href="#" className={classes["footer-bottom-link"]}>
+              <a
+                href="#"
+                className={classes["footer-bottom-link"]}
+                target="_blank"
+              >
                 <img src={instagramIcon} alt="instagram icon"></img>
               </a>
             </li>
