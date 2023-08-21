@@ -7,10 +7,10 @@ import logo from "../../assets/logo.svg";
 
 import classes from "./NavBar.module.css";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <nav className={classes.navbar}>
-      <Navigation></Navigation>
+      <Navigation onShowMenu={props.onShowMenu}></Navigation>
       <Link to="" className={classes["navbar-link"]}>
         <img src={logo} alt="audiophile logo"></img>
       </Link>

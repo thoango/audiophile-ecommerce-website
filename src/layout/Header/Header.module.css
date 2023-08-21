@@ -8,3 +8,10 @@
     padding: 0 24px;
     background-color: var(--black-color-01);
 }
+
+.modal {
+    width: 100%;
+    top: 85px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
