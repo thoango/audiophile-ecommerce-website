@@ -1,0 +1,13 @@
+.headerCategory {
+    width: 100%;
+    z-index: 99;
+    padding: 122px 0 32px;
+    background-color: var(--black-color-01);
+}
+
+.title {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    color: var(--white-color);
+}
