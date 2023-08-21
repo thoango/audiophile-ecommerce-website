@@ -19,7 +19,7 @@ const CategoryPage = () => {
     };
 
     setProducts(getProducts(params.categoryName));
-  }, [params, data]);
+  }, [params.categoryName, data]);
 
   return (
     <div className={classes.category}>
