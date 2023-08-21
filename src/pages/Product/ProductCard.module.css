@@ -1,0 +1,27 @@
+.productCard {
+    margin-top: 32px;
+}
+
+.overline {
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 1px;
+}
+
+.description {
+    opacity: .5;
+    margin: 24px 0;
+}
+
+.price {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 30px;
+}

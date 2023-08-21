@@ -1,0 +1,48 @@
+.product {
+    text-align: left;
+    padding: 0 24px;
+    margin-top: 16px;
+}
+
+.back-link span {
+    display: inline-block;
+    opacity: .5;
+}
+
+.product-card-wrapper {
+    margin-top: 24px;
+}
+
+.product-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info {
+    margin-top: 88px;
+}
+
+.info-title {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.86px;
+    margin-bottom: 24px;
+}
+
+.info-paragraph {
+    opacity: .5;
+}
+
+.info-paragraph-wrap {
+    margin-bottom: 8px;
+}
+
+.info-quantity {
+    color: var(--orange-color-dark);
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.menu {
+    margin-top: 172px;
+}

@@ -1,0 +1,19 @@
+.item {
+    margin-bottom: 56px;
+}
+
+.item-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item-title {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 1.71px;
+    margin: 32px 0;
+}
+
+.item-button {
+    color: var(--white-color);
+}
