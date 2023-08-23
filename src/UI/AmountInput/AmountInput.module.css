@@ -1,0 +1,33 @@
+.input {
+    width: 120px;
+    height: 48px;
+    background-color: var(--grey-color-01);
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.input button {
+    opacity: .25;
+}
+
+.input input {
+    border: none;
+    background-color: transparent;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.input button,
+.input input {
+    width: calc(100% / 3);
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 0;
+}

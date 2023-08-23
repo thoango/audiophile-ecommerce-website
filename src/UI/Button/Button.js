@@ -9,6 +9,7 @@ const Button = (props) => {
       className={`${classes.button} ${classes[props.styleBtn] || ""} ${
         props.className || ""
       }`}
+      onClick={props.onClick}
     >
       {props.children}
     </Link>

@@ -15,7 +15,12 @@ const ProductCard = (props) => {
       <h1 className={classes.title}>{props.name}</h1>
       <p className={classes.description}>{props.description}</p>
       <span className={classes.price}>${formatter.format(props.price)}</span>
-      <ProductForm></ProductForm>
+      <ProductForm
+        id={props.id}
+        name={props.name}
+        price={props.price}
+        slug={props.slug}
+      ></ProductForm>
     </article>
   );
 };

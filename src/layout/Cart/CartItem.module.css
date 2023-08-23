@@ -1,0 +1,46 @@
+.item {
+    margin-bottom: 24px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    /* width: 64px; */
+    flex: 0 0 64px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1 1 auto;
+}
+
+.description span {
+    line-height: 25px;
+    display: inline-block;
+}
+
+.description-name {
+    font-weight: bold;
+}
+
+.description-price {
+    font-size: 14px;
+    opacity: .5;
+}
+
+.input {
+    margin-left: 18px;
+    margin-right: 0;
+    /* width: 96px; */
+    height: 32px;
+    flex: 0 0 96px;
+}

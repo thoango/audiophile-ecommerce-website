@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import classes from "./Modal.module.css";
 
 const BackDrop = (props) => {
-  return <div className={classes.backdrop} onClick={props.onCloseMenu}></div>;
+  return <div className={classes.backdrop} onClick={props.onClose}></div>;
 };
 
 const ModalOverlay = (props) => {
@@ -20,7 +20,7 @@ const Modal = (props) => {
   return (
     <>
       {ReactDOM.createPortal(
-        <BackDrop onCloseMenu={props.onCloseMenu}></BackDrop>,
+        <BackDrop onClose={props.onClose}></BackDrop>,
         portalElement
       )}
       {ReactDOM.createPortal(

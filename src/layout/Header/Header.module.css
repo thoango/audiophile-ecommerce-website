@@ -9,9 +9,16 @@
     background-color: var(--black-color-01);
 }
 
-.modal {
+.modal-menu {
     width: 100%;
     top: 85px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.modal-cart {
+    width: calc(100% - 48px);
+    max-width: 377px;
+    margin: auto;
+    top: 110px;
 }

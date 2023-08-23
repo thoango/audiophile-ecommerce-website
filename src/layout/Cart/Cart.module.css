@@ -1,0 +1,48 @@
+.cart {
+    padding: 30px 28px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 18px;
+    letter-spacing: 1.29px;
+    font-weight: bold;
+}
+
+.header-button {
+    line-height: 25px;
+    text-decoration: underline;
+    opacity: .5;
+}
+
+.list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.total-title {
+    opacity: .5;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button {
+    width: 100%;
+    color: var(--white-color);
+}

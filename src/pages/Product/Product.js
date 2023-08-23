@@ -32,13 +32,15 @@ const ProductPage = (props) => {
           </Link>
           <div className={classes["product-card-wrapper"]}>
             <div className={classes["product-image"]}>
-              <img src={`.${product.image.mobile}`}></img>
+              <img src={`.${product.image.mobile}`} alt={props.name}></img>
             </div>
             <ProductCard
+              id={product.id}
               new={product.new}
               name={product.name}
               description={product.description}
               price={product.price}
+              slug={product.slug}
             ></ProductCard>
           </div>
           <div className={classes.info}>

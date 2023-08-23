@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Navigation from "../Navigation/Navigation";
-import Cart from "../Cart/Cart";
+import CartButton from "../Cart/CartButton";
 
 import logo from "../../assets/logo.svg";
 
@@ -14,7 +14,7 @@ const NavBar = (props) => {
       <Link to="" className={classes["navbar-link"]}>
         <img src={logo} alt="audiophile logo"></img>
       </Link>
-      <Cart></Cart>
+      <CartButton onToggleCart={props.onToggleCart}></CartButton>
     </nav>
   );
 };
