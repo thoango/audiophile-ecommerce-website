@@ -1,0 +1,4 @@
+.modal {
+    width: calc(100% - 48px);
+    margin: 134px auto 0;
+}

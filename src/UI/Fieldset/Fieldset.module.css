@@ -1,0 +1,12 @@
+.wrapper {
+    margin-top: 32px;
+    display: inline-block;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.93px;
+    color: var(--orange-color-dark);
+    text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 32px 24px;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    margin-top: 32px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.29px;
+    line-height: 25px;
+}
+
+.button {
+    color: var(--white-color);
+    width: 100%;
+    margin-top: 24px;
+}

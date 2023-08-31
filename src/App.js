@@ -6,7 +6,9 @@ import CategoryPage, {
   loader as categoryLoader,
 } from "./pages/Category/Category";
 import ProductPage, { loader as productLoader } from "./pages/Product/Product";
+import CheckoutPage from "./pages/Checkout/Checkout";
 import ErrorPage from "./pages/Error/Error";
+import CartProvider from "./store/CartProvider";
 
 import "./App.css";
 
@@ -29,10 +31,18 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/checkout",
+    element: <CheckoutPage></CheckoutPage>,
+  },
 ]);
 
 function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <CartProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </CartProvider>
+  );
 }
 
 export default App;

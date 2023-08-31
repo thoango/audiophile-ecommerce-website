@@ -1,0 +1,12 @@
+.input {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.21px;
+    line-height: 16px;
+}

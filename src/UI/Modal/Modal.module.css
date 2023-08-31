@@ -16,4 +16,7 @@
     z-index: 99;
     background-color: var(--white-color);
     border-radius: 8px;
+
+    max-height: 100vh;
+    overflow-y: scroll;
 }

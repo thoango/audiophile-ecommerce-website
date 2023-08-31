@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 48px);
+    width: 100%;
     z-index: 999;
 
     padding: 0 24px;

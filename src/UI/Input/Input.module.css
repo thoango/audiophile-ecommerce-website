@@ -1,0 +1,60 @@
+.input {
+    margin-top: 24px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.input label,
+.input input {
+    display: inline-block;
+    width: 100%;
+}
+
+.input label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.21px;
+    font-weight: bold;
+}
+
+.input input {
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+    padding: 18px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    margin-top: 10px;
+}
+
+.input input::placeholder {
+    opacity: .4;
+}
+
+.input input:focus {
+    outline: 1px solid var(--orange-color-light);
+    border: 1px solid transparent;
+}
+
+.input.error label {
+    color: var(--orange-color-dark);
+}
+
+.input.error input {
+    border-color: var(--orange-color-dark);
+    border-width: 2px;
+}
+
+.error-message {
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.21px;
+    color: var(--orange-color-dark);
+}

@@ -14,6 +14,7 @@ const MenuItem = (props) => {
           styleBtn="style03"
           className={classes.button}
           destination={props.destination}
+          onClick={props.onClick}
         >
           SHOP <span></span>
         </Button>

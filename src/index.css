@@ -27,6 +27,7 @@
  */
 
 html {
+  scroll-behavior: smooth;
   line-height: 25px;
   font-size: 15px;
   font-weight: 500;
@@ -34,6 +35,10 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Sections
@@ -48,6 +53,8 @@ body {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--grey-color-02);
+
 }
 
 /**
@@ -324,7 +331,9 @@ button {
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 /**
@@ -347,6 +356,12 @@ legend {
   /* 3 */
   white-space: normal;
   /* 1 */
+  float: left;
+}
+
+legend+* {
+  clear: both;
+  /* -webkit-margin-top-collapse: separate; */
 }
 
 /**
@@ -463,6 +478,11 @@ ul {
 }
 
 p {
+  margin: 0;
+}
+
+dl,
+dd {
   margin: 0;
 }
 

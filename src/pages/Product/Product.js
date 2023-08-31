@@ -5,6 +5,7 @@ import ProductCard from "./ProductCard";
 import ProductGallery from "./ProductGallery";
 import ProductOthers from "./ProductOthers";
 import Menu from "../../layout/Menu/Menu";
+import BackButton from "../../components/BackButton/BackButton";
 
 import classes from "./Product.module.css";
 
@@ -27,9 +28,7 @@ const ProductPage = (props) => {
     <div className={classes.product}>
       {product && (
         <>
-          <Link to="" className={classes["back-link"]}>
-            <span>Go Back</span>
-          </Link>
+          <BackButton></BackButton>
           <div className={classes["product-card-wrapper"]}>
             <div className={classes["product-image"]}>
               <img src={`.${product.image.mobile}`} alt={props.name}></img>

@@ -49,9 +49,15 @@ const Cart = () => {
           $ {formatter.format(cartCtx.totalPrice)}
         </span>
       </div>
-      <Button styleBtn="style01" className={classes.button}>
-        CHECK OUT
-      </Button>
+      {cartCtx.totalAmount > 0 && (
+        <Button
+          styleBtn="style01"
+          className={classes.button}
+          destination="/checkout"
+        >
+          CHECK OUT
+        </Button>
+      )}
     </div>
   );
 };

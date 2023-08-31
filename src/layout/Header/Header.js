@@ -48,7 +48,7 @@ const Header = (props) => {
       </header>
       {isMenuShowed && (
         <Modal className={classes["modal-menu"]} onClose={closeMenuHandler}>
-          <Menu></Menu>
+          <Menu onClose={closeMenuHandler}></Menu>
         </Modal>
       )}
       {isCartShowed && (
