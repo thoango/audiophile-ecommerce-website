@@ -3,7 +3,7 @@ import cartIcon from "../../assets/cart/cart-logo.svg";
 const CartButton = (props) => {
   return (
     <>
-      <button onClick={props.onToggleCart}>
+      <button className={props.className} onClick={props.onToggleCart}>
         <img src={cartIcon} alt="cart icon"></img>
       </button>
     </>

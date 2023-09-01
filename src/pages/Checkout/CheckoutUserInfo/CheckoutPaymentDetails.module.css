@@ -2,6 +2,7 @@
     margin-top: 16px;
     margin-bottom: 8px;
     display: inline-block;
+    width: 100%;
 }
 
 .title {
@@ -9,4 +10,21 @@
     font-weight: bold;
     letter-spacing: -0.21px;
     line-height: 16px;
+}
+
+.wrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    .input {
+        margin-bottom: 8px;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        width: calc((100% - 16px) / 2);
+    }
 }

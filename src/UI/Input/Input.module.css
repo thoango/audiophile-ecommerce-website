@@ -58,3 +58,9 @@
     letter-spacing: -0.21px;
     color: var(--orange-color-dark);
 }
+
+@media screen and (min-width: 768px) {
+    .input {
+        margin-top: 16px;
+    }
+}

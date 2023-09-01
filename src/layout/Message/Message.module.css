@@ -21,3 +21,22 @@
 .message-title span {
     color: var(--orange-color-dark);
 }
+
+@media screen and (min-width: 768px) {
+    .message {
+        padding: 0 40px;
+        margin-top: 120px;
+    }
+
+    .message-textbox {
+        margin: auto;
+        margin-top: 62px;
+        max-width: 572px;
+    }
+
+    .message-title {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.43px;
+    }
+}

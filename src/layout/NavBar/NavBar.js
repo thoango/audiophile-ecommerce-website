@@ -14,7 +14,10 @@ const NavBar = (props) => {
       <Link to="" className={classes["navbar-link"]}>
         <img src={logo} alt="audiophile logo"></img>
       </Link>
-      <CartButton onToggleCart={props.onToggleCart}></CartButton>
+      <CartButton
+        className={classes.button}
+        onToggleCart={props.onToggleCart}
+      ></CartButton>
     </nav>
   );
 };

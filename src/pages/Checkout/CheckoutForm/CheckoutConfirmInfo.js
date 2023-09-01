@@ -35,10 +35,12 @@ const CheckoutConfirmInfo = (props) => {
         </div>
       </div>
       <div className={classes["bottom-wrapper"]}>
-        <p className={classes["bottom-title"]}>GRAND TOTAL</p>
-        <p className={classes["bottom-price"]}>
-          $ {formatter.format(+props.cart.totalPrice + SHIPPING_FEE)}
-        </p>
+        <div className={classes["bottom-wrapper-inner"]}>
+          <p className={classes["bottom-title"]}>GRAND TOTAL</p>
+          <p className={classes["bottom-price"]}>
+            $ {formatter.format(+props.cart.totalPrice + SHIPPING_FEE)}
+          </p>
+        </div>
       </div>
     </div>
   );

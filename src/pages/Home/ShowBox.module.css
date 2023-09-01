@@ -67,3 +67,58 @@
     align-items: center;
     padding: 0 24px;
 }
+
+@media screen and (min-width: 768px) {
+    .showbox {
+        padding: 0 40px;
+    }
+
+    .showbox-item01 {
+        height: 720px;
+    }
+
+    .showbox-item01-image {
+        width: 182px;
+    }
+
+    .showbox-item01-card {
+        width: 382px;
+        max-width: 382px;
+        padding: 0;
+        bottom: 64px;
+    }
+
+    .showbox-item02 {
+        background: url(../../assets//home/tablet/image-speaker-zx7.jpg) bottom left no-repeat;
+        background-size: cover;
+
+        margin-top: 32px;
+        padding: 0 62px;
+    }
+
+    .showbox-item03 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .showbox-item03-image,
+    .showbox-item03-wrapper {
+        width: calc((100% - 10px) / 2);
+        height: 320px;
+        margin-top: 32px;
+    }
+
+    .showbox-item03-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showbox-item03-imageinner {
+        width: 100%;
+    }
+
+    .showbox-item03-wrapper {
+        padding: 0 40px;
+    }
+}

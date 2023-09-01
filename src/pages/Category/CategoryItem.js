@@ -6,7 +6,16 @@ const CategoryItem = (props) => {
   return (
     <li className={classes.item}>
       <div className={classes["item-image"]}>
-        <img src={`.${props.categoryImage}`} alt={props.name}></img>
+        <img
+          className="sp"
+          src={`.${props.categoryImage.mobile}`}
+          alt={props.name}
+        ></img>
+        <img
+          className="tablet"
+          src={`.${props.categoryImage.tablet}`}
+          alt={props.name}
+        ></img>
       </div>
       <Card
         styleBtn="style01"

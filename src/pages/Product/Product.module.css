@@ -57,3 +57,55 @@
     opacity: .5;
     display: inline-block;
 }
+
+@media screen and (min-width: 768px) {
+    .product {
+        padding: 0 40px;
+        margin-top: 122px;
+    }
+
+    .product-card-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .product-image {
+        width: 280px;
+    }
+
+    .info {
+        margin-top: 120px;
+    }
+
+    .info-title {
+        font-size: 32px;
+        letter-spacing: 1.14px;
+        margin-bottom: 32px;
+    }
+
+    .info.inbox {
+        display: flex;
+    }
+
+    .info-list {
+        margin-left: 170px;
+    }
+
+    .info-quantity {
+        margin-right: 24px;
+    }
+
+    .menu {
+        margin: 172px -40px 0;
+    }
+
+    /* chua */
+    .notFound {
+        padding-top: 80px;
+    }
+
+    .notFound p {
+        margin-bottom: 20px;
+    }
+}

@@ -64,3 +64,10 @@
     margin: -1px;
     padding: 0;
 }
+
+@media screen and (min-width: 768px) {
+    .input {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+}

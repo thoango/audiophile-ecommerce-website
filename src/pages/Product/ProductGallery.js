@@ -7,7 +7,10 @@ const ProductGallery = (props) => {
       const item = props.gallery[key];
       content.push(
         <div key={key} className={classes["gallery-image"]}>
-          <img src={`.${item.mobile}`}></img>
+          <div className={classes["gallery-image-inner"]}>
+            <img className="sp" src={`.${item.mobile}`}></img>
+            <img className="tablet" src={`.${item.tablet}`}></img>
+          </div>
         </div>
       );
     });

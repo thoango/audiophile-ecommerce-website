@@ -3,3 +3,10 @@
     text-align: left;
     padding: 16px 24px 0;
 }
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin-top: 90px;
+        padding: 48px 40px 0;
+    }
+}

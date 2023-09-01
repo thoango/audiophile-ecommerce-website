@@ -14,30 +14,36 @@ const CheckoutShippingInfo = (props) => {
         onBlur={props.onBlur}
         error={props.errors.address}
       ></Input>
-      <Input
-        id="zipcode"
-        type="number"
-        label="ZIP Code"
-        placeholder="10001"
-        onBlur={props.onBlur}
-        error={props.errors.zipcode}
-      ></Input>
-      <Input
-        id="city"
-        type="text"
-        label="City"
-        placeholder="New York"
-        onBlur={props.onBlur}
-        error={props.errors.city}
-      ></Input>
-      <Input
-        id="country"
-        type="text"
-        label="Country"
-        placeholder="United States"
-        onBlur={props.onBlur}
-        error={props.errors.country}
-      ></Input>
+      <div className={classes.wrapper}>
+        <Input
+          id="zipcode"
+          type="number"
+          label="ZIP Code"
+          placeholder="10001"
+          onBlur={props.onBlur}
+          error={props.errors.zipcode}
+        ></Input>
+      </div>
+      <div className={classes.wrapper}>
+        <Input
+          id="city"
+          type="text"
+          label="City"
+          placeholder="New York"
+          onBlur={props.onBlur}
+          error={props.errors.city}
+        ></Input>
+      </div>
+      <div className={classes.wrapper}>
+        <Input
+          id="country"
+          type="text"
+          label="Country"
+          placeholder="United States"
+          onBlur={props.onBlur}
+          error={props.errors.country}
+        ></Input>
+      </div>
     </Fieldset>
   );
 };

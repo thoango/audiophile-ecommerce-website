@@ -50,8 +50,20 @@
     top: 86px;
     left: 0;
     width: 100%;
+
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 1.07px;
 }
 
 .button {
     margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .item {
+        margin-bottom: 0;
+        width: calc((100% - 20px) / 3);
+    }
 }

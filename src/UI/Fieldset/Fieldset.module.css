@@ -10,3 +10,16 @@
     color: var(--orange-color-dark);
     text-transform: uppercase;
 }
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        margin-top: 50px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .title {
+        width: 100%;
+    }
+}

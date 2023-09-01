@@ -18,3 +18,13 @@
     width: 100%;
     margin-top: 24px;
 }
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding: 32px;
+    }
+
+    .button {
+        margin-top: 32px;
+    }
+}

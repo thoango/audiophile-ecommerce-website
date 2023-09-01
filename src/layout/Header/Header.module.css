@@ -22,3 +22,21 @@
     margin: auto;
     top: 110px;
 }
+
+@media screen and (min-width: 768px) {
+    .header-navbar {
+        padding: 0 40px;
+    }
+
+    .modal-menu {
+        top: 90px;
+        padding-bottom: 66px;
+    }
+
+    .modal-cart {
+        left: unset;
+        transform: unset;
+        right: 40px;
+        top: 115px;
+    }
+}

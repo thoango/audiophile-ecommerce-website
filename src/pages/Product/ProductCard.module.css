@@ -25,3 +25,15 @@
     display: inline-block;
     margin-bottom: 30px;
 }
+
+@media screen and (min-width: 768px) {
+    .productCard {
+        margin-top: 0;
+        margin-left: 70px;
+        width: calc(100% - 280px - 70px);
+    }
+
+    .description {
+        margin: 32px 0;
+    }
+}

@@ -11,7 +11,7 @@ const CategoryList = (props) => {
           <CategoryItem
             key={item.id}
             id={item.id}
-            categoryImage={item.categoryImage.mobile}
+            categoryImage={item.categoryImage}
             new={item.new}
             name={item.name}
             description={item.description}
@@ -23,7 +23,7 @@ const CategoryList = (props) => {
           <CategoryItem
             key={item.id}
             id={item.id}
-            categoryImage={item.categoryImage.mobile}
+            categoryImage={item.categoryImage}
             new={item.new}
             name={item.name}
             description={item.description}

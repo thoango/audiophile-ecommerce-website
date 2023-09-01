@@ -7,3 +7,22 @@
     overflow: hidden;
     margin-bottom: 32px;
 }
+
+@media screen and (min-width: 768px) {
+    .item-image {
+        margin-bottom: 52px;
+    }
+
+    .item h1 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.43px;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .item p {
+        max-width: 572px;
+        margin: 32px auto 24px;
+    }
+}

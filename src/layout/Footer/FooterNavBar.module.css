@@ -14,3 +14,18 @@
     line-height: 25px;
     margin-bottom: 16px;
 }
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        margin: 32px auto;
+    }
+
+    .navbar-list {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin-bottom: 0;
+        margin-right: 34px;
+    }
+}

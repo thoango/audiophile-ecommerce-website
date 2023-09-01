@@ -518,6 +518,15 @@ dd {
   padding: 0 24px;
 }
 
+.sp {
+  display: block;
+}
+
+.tablet,
+.pc {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 56px;
@@ -529,5 +538,31 @@ dd {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 1.3px;
+  }
+
+  .overline {
+    margin-bottom: 24px;
+  }
+
+  .wrap {
+    padding: 0 40px;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet {
+    display: none;
+  }
+
+  .pc {
+    display: block;
   }
 }

@@ -5,3 +5,14 @@
 .menuList {
     list-style: none;
 }
+
+@media screen and (min-width: 768px) {
+    .menu {
+        margin-top: 108px;
+    }
+
+    .menuList {
+        display: flex;
+        justify-content: space-between;
+    }
+}

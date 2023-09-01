@@ -1,4 +1,5 @@
-import imageSrc from "../../assets/shared/mobile/image-best-gear.jpg";
+import imageSrcSp from "../../assets/shared/mobile/image-best-gear.jpg";
+import imageSrcTablet from "../../assets/shared/tablet/image-best-gear.jpg";
 
 import classes from "./Message.module.css";
 
@@ -6,7 +7,12 @@ const Message = () => {
   return (
     <div className={classes.message}>
       <div className={classes["message-image"]}>
-        <img src={imageSrc} alt="best gear image"></img>
+        <img className="sp" src={imageSrcSp} alt="best gear image"></img>
+        <img
+          className="tablet"
+          src={imageSrcTablet}
+          alt="best gear image"
+        ></img>
       </div>
       <div className={classes["message-textbox"]}>
         <h4 className={classes["message-title"]}>

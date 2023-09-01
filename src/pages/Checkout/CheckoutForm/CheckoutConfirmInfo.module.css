@@ -86,3 +86,33 @@
     font-weight: bold;
     margin-top: 8px;
 }
+
+@media screen and (min-width: 768px) {
+    .cart-confirm {
+        margin-top: 32px;
+        display: flex;
+    }
+
+    .top-wrapper {
+        width: calc(100% - 198px);
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    .bottom-wrapper {
+        width: 198px;
+
+        padding: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+
+        position: relative;
+    }
+
+    .bottom-wrapper-inner {
+        position: absolute;
+        left: 24px;
+        bottom: 40px;
+    }
+}

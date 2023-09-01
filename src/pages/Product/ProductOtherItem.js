@@ -7,7 +7,16 @@ const ProductOtherItem = (props) => {
     <li className={classes.item}>
       <div className={classes["item-wrap"]}>
         <div className={classes["item-image"]}>
-          <img src={`.${props.item.image.mobile}`} alt={props.item.name}></img>
+          <img
+            className="sp"
+            src={`.${props.item.image.mobile}`}
+            alt={props.item.name}
+          ></img>
+          <img
+            className="tablet"
+            src={`.${props.item.image.tablet}`}
+            alt={props.item.name}
+          ></img>
         </div>
         <div>
           <h3 className={classes["item-title"]}>{props.item.name}</h3>

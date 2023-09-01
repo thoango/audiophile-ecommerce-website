@@ -31,7 +31,16 @@ const ProductPage = (props) => {
           <BackButton></BackButton>
           <div className={classes["product-card-wrapper"]}>
             <div className={classes["product-image"]}>
-              <img src={`.${product.image.mobile}`} alt={props.name}></img>
+              <img
+                className="sp"
+                src={`.${product.image.mobile}`}
+                alt={props.name}
+              ></img>
+              <img
+                className="tablet"
+                src={`.${product.image.tablet}`}
+                alt={props.name}
+              ></img>
             </div>
             <ProductCard
               id={product.id}
@@ -46,16 +55,18 @@ const ProductPage = (props) => {
             <h2 className={classes["info-title"]}>FEATURES</h2>
             <p className={classes["info-paragraph"]}>{product.features}</p>
           </div>
-          <div className={classes.info}>
+          <div className={`${classes.info} ${classes["inbox"]}`}>
             <h2 className={classes["info-title"]}>IN THE BOX</h2>
-            {product.includes.map((item, index) => (
-              <div key={index} className={classes["info-paragraph-wrap"]}>
-                <span className={classes["info-quantity"]}>
-                  {item.quantity}x
-                </span>
-                <span className={classes["info-paragraph"]}>{item.item}</span>
-              </div>
-            ))}
+            <div className={classes["info-list"]}>
+              {product.includes.map((item, index) => (
+                <div key={index} className={classes["info-paragraph-wrap"]}>
+                  <span className={classes["info-quantity"]}>
+                    {item.quantity}x
+                  </span>
+                  <span className={classes["info-paragraph"]}>{item.item}</span>
+                </div>
+              ))}
+            </div>
           </div>
           <ProductGallery gallery={product.gallery}></ProductGallery>
           <ProductOthers others={product.others}></ProductOthers>

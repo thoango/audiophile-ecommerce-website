@@ -32,43 +32,49 @@ const CheckoutPaymentDetails = (props) => {
     <Fieldset title="payment details">
       <div className={classes.input}>
         <p className={classes.title}>Payment Method</p>
-        <InputRadio
-          id="emoney"
-          type="radio"
-          label="e-Money"
-          value="emoney"
-          name="payment-method"
-          checked={isEMoneyChecked}
-          onChange={checkEMoneyHandler}
-        ></InputRadio>
-        <InputRadio
-          id="cash"
-          type="radio"
-          label="Cash on Delivery"
-          value="cash"
-          name="payment-method"
-          checked={isCashedChecked}
-          onChange={checkCashedHandler}
-        ></InputRadio>
+        <div className={classes.wrapper}>
+          <InputRadio
+            id="emoney"
+            type="radio"
+            label="e-Money"
+            value="emoney"
+            name="payment-method"
+            checked={isEMoneyChecked}
+            onChange={checkEMoneyHandler}
+          ></InputRadio>
+          <InputRadio
+            id="cash"
+            type="radio"
+            label="Cash on Delivery"
+            value="cash"
+            name="payment-method"
+            checked={isCashedChecked}
+            onChange={checkCashedHandler}
+          ></InputRadio>
+        </div>
       </div>
       {isEMoneyChecked && (
         <>
-          <Input
-            id="eNumber"
-            type="number"
-            label="e-Money Number"
-            placeholder="238521993"
-            onBlur={props.onBlur}
-            error={props.errors.eNumber}
-          ></Input>
-          <Input
-            id="ePin"
-            type="number"
-            label="e-Money PIN"
-            placeholder="6891"
-            onBlur={props.onBlur}
-            error={props.errors.ePin}
-          ></Input>
+          <div className={classes.wrapper}>
+            <Input
+              id="eNumber"
+              type="number"
+              label="e-Money Number"
+              placeholder="238521993"
+              onBlur={props.onBlur}
+              error={props.errors.eNumber}
+            ></Input>
+          </div>
+          <div className={classes.wrapper}>
+            <Input
+              id="ePin"
+              type="number"
+              label="e-Money PIN"
+              placeholder="6891"
+              onBlur={props.onBlur}
+              error={props.errors.ePin}
+            ></Input>
+          </div>
         </>
       )}
     </Fieldset>
