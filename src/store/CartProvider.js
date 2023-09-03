@@ -9,7 +9,21 @@ const DEFAULT_CART = {
 };
 
 const CartProvider = (props) => {
-  const [cart, setCart] = useState(DEFAULT_CART);
+  const [cart, setCart] = useState(getCartFromLocalStorage);
+
+  function getCartFromLocalStorage() {
+    let items = [];
+    let totalAmount = 0;
+    let totalPrice = 0;
+    if (localStorage.getItem("items")) {
+      items = JSON.parse(localStorage.getItem("items"));
+      items.forEach((item) => {
+        totalAmount += +item.amount;
+        totalPrice += +item.price * +item.amount;
+      });
+    }
+    return { items: items, totalAmount: totalAmount, totalPrice: totalPrice };
+  }
 
   const addItemToCartHandler = (addedItem) => {
     let updatedItems;
@@ -23,6 +37,8 @@ const CartProvider = (props) => {
         totalAmount: prevCart.totalAmount + addedItem.amount,
         totalPrice: prevCart.totalPrice + +addedItem.price * +addedItem.amount,
       }));
+
+      localStorage.setItem("items", JSON.stringify(updatedItems));
     } else {
       const updatedItem = {
         ...cart.items[index],
@@ -36,6 +52,8 @@ const CartProvider = (props) => {
         totalAmount: prevCart.totalAmount + addedItem.amount,
         totalPrice: prevCart.totalPrice + +addedItem.price * +addedItem.amount,
       }));
+
+      localStorage.setItem("items", JSON.stringify(updatedItems));
     }
   };
 
@@ -60,6 +78,8 @@ const CartProvider = (props) => {
         totalAmount: prevCart.totalAmount - 1,
         totalPrice: prevCart.totalPrice - prevCart.items[index].price,
       }));
+
+      localStorage.setItem("items", JSON.stringify(updatedItems));
     }
   };
 
@@ -79,11 +99,15 @@ const CartProvider = (props) => {
           prevCart.items[index].amount * prevCart.items[index].price +
           updatedAmount * prevCart.items[index].price,
       }));
+
+      localStorage.setItem("items", JSON.stringify(updatedItems));
     }
   };
 
   const removeAllHandler = () => {
     setCart(DEFAULT_CART);
+
+    localStorage.removeItem("items");
   };
 
   const cartContext = {
