@@ -29,3 +29,21 @@
         margin-right: 34px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        margin: 0;
+    }
+
+    .navbar-item:last-child {
+        margin-right: 0;
+    }
+
+    .navbar-item {
+        transition: all .2s;
+    }
+
+    .navbar-item:hover {
+        color: var(--orange-color-dark);
+    }
+}

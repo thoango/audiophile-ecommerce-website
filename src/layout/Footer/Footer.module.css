@@ -60,3 +60,47 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding: 75px 0 48px;
+        margin-top: 200px;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .footer-logo {
+        margin: 0;
+    }
+
+    .footer-message {
+        width: 540px;
+        margin-top: 36px;
+    }
+
+    .footer-bottom {
+        margin-top: 56px;
+        width: 100%;
+    }
+
+    .footer-bottom-list {
+        position: absolute;
+        top: 130px;
+        right: 0;
+    }
+
+    .footer-bottom-item:last-child {
+        margin-right: 0;
+    }
+}

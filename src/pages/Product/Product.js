@@ -41,6 +41,11 @@ const ProductPage = (props) => {
                 src={`.${product.image.tablet}`}
                 alt={props.name}
               ></img>
+              <img
+                className="pc"
+                src={`.${product.image.desktop}`}
+                alt={props.name}
+              ></img>
             </div>
             <ProductCard
               id={product.id}
@@ -51,23 +56,28 @@ const ProductPage = (props) => {
               slug={product.slug}
             ></ProductCard>
           </div>
-          <div className={classes.info}>
-            <h2 className={classes["info-title"]}>FEATURES</h2>
-            <p className={classes["info-paragraph"]}>{product.features}</p>
-          </div>
-          <div className={`${classes.info} ${classes["inbox"]}`}>
-            <h2 className={classes["info-title"]}>IN THE BOX</h2>
-            <div className={classes["info-list"]}>
-              {product.includes.map((item, index) => (
-                <div key={index} className={classes["info-paragraph-wrap"]}>
-                  <span className={classes["info-quantity"]}>
-                    {item.quantity}x
-                  </span>
-                  <span className={classes["info-paragraph"]}>{item.item}</span>
-                </div>
-              ))}
+          <div className={classes["info-group"]}>
+            <div className={`${classes.info} ${classes["info-features"]}`}>
+              <h2 className={classes["info-title"]}>FEATURES</h2>
+              <p className={classes["info-paragraph"]}>{product.features}</p>
+            </div>
+            <div className={`${classes.info} ${classes["inbox"]}`}>
+              <h2 className={classes["info-title"]}>IN THE BOX</h2>
+              <div className={classes["info-list"]}>
+                {product.includes.map((item, index) => (
+                  <div key={index} className={classes["info-paragraph-wrap"]}>
+                    <span className={classes["info-quantity"]}>
+                      {item.quantity}x
+                    </span>
+                    <span className={classes["info-paragraph"]}>
+                      {item.item}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
+
           <ProductGallery gallery={product.gallery}></ProductGallery>
           <ProductOthers others={product.others}></ProductOthers>
           <div className={classes.menu}>

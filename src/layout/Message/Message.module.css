@@ -40,3 +40,29 @@
         letter-spacing: 1.43px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .message {
+        padding: 0;
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+        margin-top: 200px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .message-image {
+        order: 2;
+        width: 540px;
+    }
+
+    .message-textbox {
+        order: 1;
+        margin: 0;
+        max-width: 445px;
+        text-align: left;
+    }
+}

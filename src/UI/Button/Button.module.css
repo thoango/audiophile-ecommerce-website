@@ -42,3 +42,24 @@
     border-bottom: none;
     margin-left: 8px;
 }
+
+@media screen and (min-width: 1200px) {
+    .button {
+        transition: all .2s;
+    }
+
+    .button:hover {
+        background-color: var(--black-color-01);
+        color: var(--white-color);
+    }
+
+    .button.style01:hover {
+        background-color: var(--orange-color-light);
+        border-color: var(--orange-color-light);
+    }
+
+    .button.style03:hover {
+        color: var(--orange-color-dark);
+        background-color: transparent;
+    }
+}

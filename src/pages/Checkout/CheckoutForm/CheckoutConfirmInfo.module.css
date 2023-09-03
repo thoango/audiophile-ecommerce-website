@@ -13,9 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, .08);
+
+    padding-top: 16px;
+}
+
+.item-wrapper:first-child {
+    padding-top: 0;
 }
 
 .image {
@@ -61,6 +64,10 @@
     font-weight: bold;
     opacity: .5;
     text-align: center;
+
+    padding-top: 12px;
+    margin-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, .08);
 }
 
 .bottom-wrapper {
@@ -114,5 +121,11 @@
         position: absolute;
         left: 24px;
         bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .other:hover {
+        cursor: pointer;
     }
 }

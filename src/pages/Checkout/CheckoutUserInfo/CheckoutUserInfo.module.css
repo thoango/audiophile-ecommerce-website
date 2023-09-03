@@ -23,3 +23,11 @@
         letter-spacing: 1.14px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        padding: 54px 48px 48px;
+        width: 730px;
+        margin-top: 0;
+    }
+}

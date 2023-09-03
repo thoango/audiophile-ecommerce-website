@@ -23,10 +23,31 @@
     }
 
     .kanban-wrapper {
-        /* width: 396px; */
         max-width: 396px;
         padding: 0;
 
         top: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .kanban {
+        background: #000000 url(../../assets/home/desktop/image-hero.jpg) center / 1440px no-repeat;
+    }
+
+    .kanban-wrapper {
+        max-width: 398px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    .kanban-wrapper-outer {
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+        height: 100%;
+        position: relative;
     }
 }

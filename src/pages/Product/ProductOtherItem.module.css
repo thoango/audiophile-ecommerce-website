@@ -28,3 +28,9 @@
         margin: 40px 0 32px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .item {
+        width: calc((100% - 60px) / 3);
+    }
+}

@@ -12,3 +12,33 @@
     display: inline-block;
     background-color: var(--white-color);
 }
+
+.navi-pc {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .button-sp {
+        display: none;
+    }
+
+    .navi-pc {
+        display: flex;
+        order: 2;
+        list-style: none;
+        color: var(--white-color);
+    }
+
+    .navi-item {
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        margin-right: 34px;
+        font-weight: bold;
+        transition: all .2s;
+    }
+
+    .navi-item:hover {
+        color: var(--orange-color-dark);
+    }
+}

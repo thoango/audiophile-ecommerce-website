@@ -3,3 +3,12 @@
     margin: 10vh auto 0;
     max-width: 540px;
 }
+
+@media screen and (min-width: 1200px) {
+    .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 38px;
+    }
+}

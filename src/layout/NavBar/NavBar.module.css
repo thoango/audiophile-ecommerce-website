@@ -26,3 +26,24 @@
         margin-left: auto;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        max-width: 1110px;
+        margin: auto;
+    }
+
+    .navbar-link {
+        order: 1;
+        margin-left: 0;
+        margin-right: 196px;
+    }
+
+    .button {
+        order: 3;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+}

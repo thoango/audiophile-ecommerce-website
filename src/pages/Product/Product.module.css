@@ -109,3 +109,47 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .product {
+        padding: 0;
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+        margin-top: 170px;
+    }
+
+    .product-card-wrapper {
+        margin-top: 56px;
+    }
+
+    .product-image {
+        width: 540px;
+    }
+
+    .info-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info {
+        margin-top: 160px;
+    }
+
+    .info-features {
+        width: 635px;
+    }
+
+    .info.inbox {
+        display: inline-block;
+        width: 350px;
+    }
+
+    .info-list {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin: 240px -40px 0;
+    }
+}

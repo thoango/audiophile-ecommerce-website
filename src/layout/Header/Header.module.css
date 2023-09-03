@@ -40,3 +40,13 @@
         top: 115px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .header-navbar {
+        padding: 0;
+    }
+
+    .modal-cart {
+        right: calc((100% - 1110px) / 2);
+    }
+}

@@ -2,3 +2,14 @@
     display: inline-block;
     opacity: .5;
 }
+
+@media screen and (min-width: 1200px) {
+    .back-link {
+        transition: all .2s;
+    }
+
+    .back-link:hover span {
+        color: var(--orange-color-dark);
+        opacity: 1;
+    }
+}

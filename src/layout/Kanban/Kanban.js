@@ -12,15 +12,17 @@ const Kanban = () => {
 
   return (
     <div className={classes.kanban}>
-      <div className={classes["kanban-wrapper"]}>
-        <Card
-          styleBtn="style01"
-          productName={product.productName}
-          discription={product.discription}
-          new={product.new}
-          background="color"
-          destination="product/4"
-        ></Card>
+      <div className={classes["kanban-wrapper-outer"]}>
+        <div className={classes["kanban-wrapper"]}>
+          <Card
+            styleBtn="style01"
+            productName={product.productName}
+            discription={product.discription}
+            new={product.new}
+            background="color"
+            destination="product/4"
+          ></Card>
+        </div>
       </div>
     </div>
   );

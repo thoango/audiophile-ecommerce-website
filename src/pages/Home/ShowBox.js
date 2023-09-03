@@ -1,7 +1,9 @@
 import speakerSrcSp from "../../assets/home/mobile/image-speaker-zx9.png";
 import speakerSrcTablet from "../../assets/home/tablet/image-speaker-zx9.png";
+import speakerSrcPc from "../../assets/home/desktop/image-speaker-zx9.png";
 import earphoneSrcSp from "../../assets/home/mobile/image-earphones-yx1.jpg";
 import earphoneSrcTablet from "../../assets/home/tablet/image-earphones-yx1.jpg";
+import earphoneSrcPc from "../../assets/home/desktop/image-earphones-yx1.jpg";
 
 import Card from "../../components/Card/Card";
 import Button from "../../UI/Button/Button";
@@ -26,6 +28,7 @@ const ShowBox = () => {
             src={speakerSrcTablet}
             alt="speaker zx9"
           ></img>
+          <img className="pc" src={speakerSrcPc} alt="speaker zx9"></img>
         </div>
         <div className={classes["showbox-item01-card"]}>
           <Card
@@ -60,6 +63,7 @@ const ShowBox = () => {
               src={earphoneSrcTablet}
               alt="YX1 EARPHONES"
             ></img>
+            <img className="pc" src={earphoneSrcPc} alt="YX1 EARPHONES"></img>
           </div>
         </div>
         <div className={classes["showbox-item03-wrapper"]}>

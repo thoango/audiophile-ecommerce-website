@@ -11,3 +11,13 @@
         margin-top: 120px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .list {
+        padding: 0;
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+        margin-top: 160px;
+    }
+}

@@ -16,6 +16,11 @@ const CategoryItem = (props) => {
           src={`.${props.categoryImage.tablet}`}
           alt={props.name}
         ></img>
+        <img
+          className="pc"
+          src={`.${props.categoryImage.desktop}`}
+          alt={props.name}
+        ></img>
       </div>
       <Card
         styleBtn="style01"

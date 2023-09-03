@@ -17,6 +17,11 @@ const ProductOtherItem = (props) => {
             src={`.${props.item.image.tablet}`}
             alt={props.item.name}
           ></img>
+          <img
+            className="pc"
+            src={`.${props.item.image.desktop}`}
+            alt={props.item.name}
+          ></img>
         </div>
         <div>
           <h3 className={classes["item-title"]}>{props.item.name}</h3>

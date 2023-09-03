@@ -27,3 +27,13 @@
         margin: 0 16px 40px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .card {
+        text-align: left;
+    }
+
+    .discription {
+        margin: 0 0 40px;
+    }
+}

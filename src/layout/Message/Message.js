@@ -1,5 +1,6 @@
 import imageSrcSp from "../../assets/shared/mobile/image-best-gear.jpg";
 import imageSrcTablet from "../../assets/shared/tablet/image-best-gear.jpg";
+import imageSrcPc from "../../assets/shared/desktop/image-best-gear.jpg";
 
 import classes from "./Message.module.css";
 
@@ -13,6 +14,7 @@ const Message = () => {
           src={imageSrcTablet}
           alt="best gear image"
         ></img>
+        <img className="pc" src={imageSrcPc} alt="best gear image"></img>
       </div>
       <div className={classes["message-textbox"]}>
         <h4 className={classes["message-title"]}>

@@ -26,3 +26,33 @@
         margin: 32px auto 24px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 160px;
+    }
+
+    .item:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .item article {
+        max-width: 445px;
+    }
+
+    .item h1 {
+        margin: 0;
+    }
+
+    .item p {
+        margin: 32px 0 40px;
+    }
+
+    .item-image {
+        width: 540px;
+        margin: 0;
+    }
+}

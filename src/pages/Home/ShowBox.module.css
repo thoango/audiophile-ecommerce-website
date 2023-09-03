@@ -71,6 +71,7 @@
 @media screen and (min-width: 768px) {
     .showbox {
         padding: 0 40px;
+        margin-top: 96px;
     }
 
     .showbox-item01 {
@@ -120,5 +121,52 @@
 
     .showbox-item03-wrapper {
         padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .showbox {
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+        padding: 0;
+        margin-top: 168px;
+    }
+
+    .showbox-item01 {
+        height: 560px;
+        overflow: hidden;
+    }
+
+    .showbox-item01-image {
+        width: 410px;
+        top: 96px;
+        left: 116px;
+        transform: none;
+    }
+
+    .showbox-item01-card {
+        max-width: 350px;
+        bottom: 124px;
+        left: unset;
+        right: 95px;
+        transform: none;
+    }
+
+    .showbox-item02 {
+        background: url(../../assets//home/desktop/image-speaker-zx7.jpg) center no-repeat;
+
+        margin-top: 48px;
+        padding: 0 95px;
+    }
+
+    .showbox-item03-image,
+    .showbox-item03-wrapper {
+        width: calc((100% - 30px) / 2);
+        margin-top: 48px;
+    }
+
+    .showbox-item03-wrapper {
+        padding: 0 95px;
     }
 }

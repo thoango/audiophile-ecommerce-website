@@ -486,6 +486,18 @@ dd {
   margin: 0;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* typography classes */
 .overline {
   font-size: 14px;
@@ -564,5 +576,12 @@ dd {
 
   .pc {
     display: block;
+  }
+
+  .wrap {
+    padding: 0;
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
   }
 }

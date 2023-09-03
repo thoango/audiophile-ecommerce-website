@@ -10,6 +10,7 @@ const ProductGallery = (props) => {
           <div className={classes["gallery-image-inner"]}>
             <img className="sp" src={`.${item.mobile}`}></img>
             <img className="tablet" src={`.${item.tablet}`}></img>
+            <img className="pc" src={`.${item.desktop}`}></img>
           </div>
         </div>
       );

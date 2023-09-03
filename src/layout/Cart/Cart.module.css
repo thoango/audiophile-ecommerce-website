@@ -47,4 +47,14 @@
     color: var(--white-color);
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1200px) {
+    .header-button {
+        transition: all .2s;
+    }
+
+    .header-button:hover {
+        color: var(--orange-color-dark);
+        opacity: 1;
+        cursor: pointer;
+    }
+}
