@@ -1,0 +1,23 @@
+.notFound {
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 90px;
+}
+
+.notFound p {
+    color: var(--orange-color-dark);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.notFound a {
+    opacity: .5;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+    .notFound a:hover {
+        opacity: 1;
+        color: var(--orange-color-dark);
+    }
+}

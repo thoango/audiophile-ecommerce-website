@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import * as functions from "../../../utils/functions";
+
 import classes from "./CheckoutConfirmInfo.module.css";
 
 const SHIPPING_FEE = 50;
@@ -19,7 +21,9 @@ const CheckoutConfirmInfo = (props) => {
           ></img>
         </div>
         <div className={classes.description}>
-          <span className={classes["description-name"]}>{item.name}</span>
+          <span className={classes["description-name"]}>
+            {functions.shortenProductName(item.name)}
+          </span>
           <span className={classes["description-price"]}>
             $ {formatter.format(+item.price * +item.amount)}
           </span>

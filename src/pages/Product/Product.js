@@ -88,7 +88,7 @@ const ProductPage = (props) => {
       {!product && (
         <div className={classes.notFound}>
           <p>Not found product!</p>
-          <Link to="">Go Home</Link>
+          <Link to="/">Go Home</Link>
         </div>
       )}
     </div>

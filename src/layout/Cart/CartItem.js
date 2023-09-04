@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import AmountInput from "../../UI/AmountInput/AmountInput";
 
+import * as functions from "../../utils/functions";
+
 import classes from "./CartItem.module.css";
 
 const formatter = new Intl.NumberFormat("en-US");
@@ -34,7 +36,9 @@ const CartItem = (props) => {
           ></img>
         </div>
         <div className={classes.description}>
-          <span className={classes["description-name"]}>{props.name}</span>
+          <span className={classes["description-name"]}>
+            {functions.shortenProductName(props.name)}
+          </span>
           <span className={classes["description-price"]}>
             $ {formatter.format(+props.price * +props.amount)}
           </span>

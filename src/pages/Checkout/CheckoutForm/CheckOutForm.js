@@ -5,11 +5,14 @@ import CheckoutCart from "../CheckoutCart/CheckoutCart";
 import Modal from "../../../UI/Modal/Modal";
 import CheckoutConfirmation from "./CheckoutConfirmation";
 import CartContext from "../../../store/cart-context";
+import NoItems from "../../NoItems/NoItems";
 
 import classes from "./CheckoutForm.module.css";
 
 const CheckoutForm = () => {
   const cartCtx = useContext(CartContext);
+
+  const { totalAmount } = cartCtx;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -100,18 +103,23 @@ const CheckoutForm = () => {
   };
 
   return (
-    <form className={classes.form}>
-      <CheckoutUserInfo
-        onBlur={completeInputHandler}
-        errors={errors}
-      ></CheckoutUserInfo>
-      <CheckoutCart onClick={submitFormHandler}></CheckoutCart>
-      {isConfirmShowed && (
-        <Modal className={classes.modal}>
-          <CheckoutConfirmation cart={cartInfo}></CheckoutConfirmation>
-        </Modal>
+    <>
+      {totalAmount > 0 && (
+        <form className={classes.form}>
+          <CheckoutUserInfo
+            onBlur={completeInputHandler}
+            errors={errors}
+          ></CheckoutUserInfo>
+          <CheckoutCart onClick={submitFormHandler}></CheckoutCart>
+          {isConfirmShowed && (
+            <Modal className={classes.modal}>
+              <CheckoutConfirmation cart={cartInfo}></CheckoutConfirmation>
+            </Modal>
+          )}
+        </form>
       )}
-    </form>
+      {totalAmount === 0 && <NoItems></NoItems>}
+    </>
   );
 };
 export default CheckoutForm;

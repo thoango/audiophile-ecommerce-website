@@ -1,3 +1,5 @@
+import * as functions from "../../../utils/functions";
+
 import classes from "./CheckoutCartItem.module.css";
 
 const formatter = new Intl.NumberFormat("en-US");
@@ -13,7 +15,9 @@ const CheckoutCartItem = (props) => {
           ></img>
         </div>
         <div className={classes.description}>
-          <span className={classes["description-name"]}>{props.item.name}</span>
+          <span className={classes["description-name"]}>
+            {functions.shortenProductName(props.item.name)}
+          </span>
           <span className={classes["description-price"]}>
             $ {formatter.format(+props.item.price * +props.item.amount)}
           </span>

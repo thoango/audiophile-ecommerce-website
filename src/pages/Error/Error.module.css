@@ -1,0 +1,26 @@
+.error {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.error p {
+    color: var(--orange-color-dark);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.error p:first-of-type {
+    margin-bottom: 0;
+}
+
+.error a {
+    opacity: .5;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+    .error a:hover {
+        opacity: 1;
+        color: var(--orange-color-dark);
+    }
+}

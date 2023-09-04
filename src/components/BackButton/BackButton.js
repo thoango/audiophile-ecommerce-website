@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import classes from "./BackButton.module.css";
 
 const BackButton = () => {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
-    <Link to="" className={classes["back-link"]}>
+    <button onClick={goBack} className={classes["back-link"]}>
       <span>Go Back</span>
-    </Link>
+    </button>
   );
 };
 

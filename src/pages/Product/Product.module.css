@@ -26,6 +26,7 @@
 
 .info-paragraph {
     opacity: .5;
+    white-space: break-spaces;
 }
 
 .info-paragraph-wrap {
@@ -99,15 +100,6 @@
     .menu {
         margin: 172px -40px 0;
     }
-
-    /* chua */
-    .notFound {
-        padding-top: 80px;
-    }
-
-    .notFound p {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -151,5 +143,10 @@
 
     .menu {
         margin: 240px -40px 0;
+    }
+
+    .notFound a:hover {
+        opacity: 1;
+        color: var(--orange-color-dark);
     }
 }

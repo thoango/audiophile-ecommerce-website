@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams, Link } from "react-router-dom";
 
 import CategoryList from "./CategoryList";
 import Menu from "../../layout/Menu/Menu";
@@ -23,8 +23,18 @@ const CategoryPage = () => {
 
   return (
     <div className={classes.category}>
-      <CategoryList products={products}></CategoryList>
-      <Menu></Menu>
+      {products.length > 0 && (
+        <>
+          <CategoryList products={products}></CategoryList>
+          <Menu></Menu>
+        </>
+      )}
+      {products.length === 0 && (
+        <div className={classes.notFound}>
+          <p>Not found category!</p>
+          <Link to="/">Go Home</Link>
+        </div>
+      )}
     </div>
   );
 };
